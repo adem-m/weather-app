@@ -1,0 +1,44 @@
+{
+    "cities": [
+        {
+            "insee": "35238",
+            "cp": 35000,
+            "latitude": 48.112,
+            "longitude": -1.6819,
+            "altitude": 38,
+            "name": "Rennes"
+        },
+        {
+            "insee": "53189",
+            "cp": 53110,
+            "latitude": 48.491,
+            "longitude": -0.507,
+            "altitude": 128,
+            "name": "Rennes-en-Grenouilles"
+        },
+        {
+            "insee": "11309",
+            "cp": 11190,
+            "latitude": 42.9139,
+            "longitude": 2.2736,
+            "altitude": 445,
+            "name": "Rennes-le-Ch\u00e2teau"
+        },
+        {
+            "insee": "11310",
+            "cp": 11190,
+            "latitude": 42.9244,
+            "longitude": 2.3414,
+            "altitude": 528,
+            "name": "Rennes-les-Bains"
+        },
+        {
+            "insee": "25488",
+            "cp": 25440,
+            "latitude": 47.0154,
+            "longitude": 5.8584,
+            "altitude": 324,
+            "name": "Rennes-sur-Loue"
+        }
+    ]
+}

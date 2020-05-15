@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(71, 71, 71);
+    font-family: "Roboto", sans-serif;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 100;
+    font-size: 3em;
+}
+h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 1em;
+}
+.app {
+    width: 900px;
+    max-width: 90vw;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.cityName {
+    text-align: left;
+}
+.currentWeather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proba {
+    color: rgb(126, 126, 126);
+}
+.temperature {
+    font-size: 4em;
+}
+.nextDays {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 2em 0 1em 0;
+}
+.eachDay {
+    margin: 1em 0.3em 0 0.3em;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+.min {
+    color: rgb(126, 126, 126);
+}
+.form {
+    display: flex;
+    width: 400px;
+    margin: auto;
+}
+.form input {
+    margin: 0 0.3em;
+}
