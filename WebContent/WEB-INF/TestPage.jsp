@@ -48,10 +48,12 @@ h4 {
 	display: flex;
 	flex-flow: column;
 	text-align: center;
+	box-shadow: 2px 2px 3px;
 }
 
 .cityName {
 	text-align: left;
+	padding: 0.5em;
 }
 
 .currentWeather {
@@ -60,7 +62,11 @@ h4 {
 	justify-content: center;
 }
 
-.proba {
+.conditions {
+	max-width: 200px;
+}
+
+.otherInfos {
 	color: rgb(126, 126, 126);
 }
 
@@ -112,10 +118,11 @@ h4 {
 			<img src="${ city.icon }" width="200px">
 			<div>
 				<div class="temperature">${ city.temperature }°C</div>
-				<p>${ city.conditions }</p>
+				<p class="conditions">${ city.conditions }</p>
 			</div>
 		</div>
-		<p class="proba">Probabilité de précipitations : ${ city.probaRain }%</p>
+		<p class="otherInfos">Vitesse du vent : ${ city.wind } km/h</p>
+		<p class="otherInfos">Probabilité de précipitations : ${ city.probaRain }%</p>
 		<div class="nextDays">
 			<c:forEach items="${ city.nextDays }" var="nextDay">
 				<div class="eachDay">
@@ -133,7 +140,7 @@ h4 {
 			<input type="text" class="form-control"
 				placeholder="Saisissez le nom d'une ville" name="city" required
 				minlength="2">
-			<button class="btn btn-primary" type="submit">
+			<button class="btn btn-secondary" type="submit">
 				<img
 					src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"
 					height="22px">

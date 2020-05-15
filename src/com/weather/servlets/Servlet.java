@@ -204,6 +204,7 @@ public class Servlet extends HttpServlet {
 					+ this.condition.get(json.getJSONArray("forecast").getJSONObject(0).getInt("weather"))[1]
 					+ "-512.png");
 			city.setProbaRain(json.getJSONArray("forecast").getJSONObject(0).getInt("probarain"));
+			city.setWind(json.getJSONArray("forecast").getJSONObject(0).getInt("wind10m"));
 			return true;
 		}
 		return false;

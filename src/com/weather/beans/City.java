@@ -7,6 +7,7 @@ public class City {
 	private String conditions;
 	private String icon;
 	private Integer probaRain;
+	private Integer wind;
 	private HashMap<String, String>[] nextDays;
 	
 	public String getName() {
@@ -27,6 +28,9 @@ public class City {
 	public Integer getProbaRain() {
 		return probaRain;
 	}
+	public Integer getWind() {
+		return wind;
+	}
 	public void setName(String n) {
 		this.name = n;
 	}
@@ -44,5 +48,8 @@ public class City {
 	}
 	public void setProbaRain(Integer probaRain) {
 		this.probaRain = probaRain;
+	}
+	public void setWind(Integer wind) {
+		this.wind = wind;
 	}
 }
